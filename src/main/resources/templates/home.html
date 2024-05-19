@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" th:href="@{'/css/output.css'}" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div
+      class="container bg-gray-200 w-1/2 p-4 flex flex-col space-y-3 items-center mx-auto mt-4"
+    >
+      <h1 class="text-2xl font-bold" data-th-text="${name}">
+        Welcome to home page
+      </h1>
+      <p class="text-xl text-gray-700">
+        Youtube Channel:
+        <span data-th-text="${youtubeChannel}">Code Decode</span>
+      </p>
+      <p>
+        Github Link: <span th:text="${githubRepo}">https://github.com</span>
+      </p>
+      <a th:href="${githubRepo}" target="_blank">Click here to open</a>
+      <p class="text-gray-600">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum libero
+        ipsam incidunt, iure molestiae id earum ex impedit delectus dolor a
+        temporibus ut! Dolores, provident ducimus officiis minima vel veritatis?
+      </p>
+      <div>
+        <button
+          class="px-3 py-3 rounded bg-blue-700 text-white hover:bg-blue-600"
+        >
+          Click here
+        </button>
+      </div>
+    </div>
+    <!-- Flow bite content -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  </body>
+</html>
