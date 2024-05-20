@@ -32,5 +32,23 @@ public class PageController {
     public String servicesPageString() {
         return "services";
     }
+
+    //contact page 
+    @RequestMapping(path = "/contact", method=RequestMethod.GET)
+    public String contact() {
+        return "contact";
+    }
+
+    //login page 
+    @RequestMapping(path = "/login", method=RequestMethod.GET)
+    public String login() {
+        return "login";
+    }
+
+    //register page 
+    @RequestMapping(path = "/register", method=RequestMethod.GET)
+    public String register() {
+        return "register";
+    }
     
 }
